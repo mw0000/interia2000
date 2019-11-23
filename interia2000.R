@@ -76,3 +76,35 @@ links %>% filter(!grepl('www.poczta.fm', url)) -> links
 unique(links) -> links
 
 write.csv(links, 'interia2000_outside.csv', fileEncoding = "UTF-8")
+
+##########################################
+
+# http://archive.org/wayback/available?url=example.com&timestamp=20060101
+
+# test
+
+avapi <- 'http://archive.org/wayback/available?url='
+
+resp <- fromJSON(paste0(avapi,links$url[3],'&timestamp=2000'))
+
+str(resp$archived_snapshots$closest$url)
+
+
+links$url -> links.lst
+
+links.lst <- as.character(links.lst)
+
+wb_links <- data.frame(stringsAsFactors = FALSE)
+
+for(l in links.lst[1:15]) {
+
+  #str(l)
+  avapi <- 'http://archive.org/wayback/available?url='
+  resp <- fromJSON(paste0(avapi,l,'&timestamp=2000'))
+  b_url = resp$archived_snapshots$closest$url
+  cat(paste0(b_url,'\n'))
+  #ifelse(!is.null(b_url), wb_url = b_url, wb_url = NULL)  
+  #wb_links <- rbind(wb_links, as.data.frame(list(url = l, wb_url), stringsAsFactors = FALSE))
+  
+}
+
