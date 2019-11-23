@@ -34,3 +34,30 @@ for(u in dta.data$wayback_url) {
 }
 
 save.image()
+
+######################################################################
+
+
+get_links <- function(d) {
+  # d - directory
+  
+  library(xml2)
+  links <- data.frame(stringsAsFactors = FALSE)
+  pages <- dir(d)
+  
+  for(p in pages) {
+    
+    p.html <- read_html(paste0(d,'/',p), encoding = "UTF-8")
+    l <- xml_find_all(p.html, '//a/@href')
+    
+    links <- rbind(links,as.data.frame(unlist(as_list(l))))
+    
+  }
+
+return(links)  
+    
+}
+
+tst <- get_links('pages')
+
+write.csv(tst, 'interia2000links.csv', fileEncoding = "UTF-8")
