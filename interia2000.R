@@ -37,7 +37,6 @@ save.image()
 
 ######################################################################
 
-
 get_links <- function(d) {
   # d - directory
   
@@ -61,3 +60,19 @@ return(links)
 tst <- get_links('pages')
 
 write.csv(tst, 'interia2000links.csv', fileEncoding = "UTF-8")
+
+tst -> links
+
+################################
+
+names(links) <- 'url'
+
+links %>% filter(!grepl('interia', url)) -> links
+
+links %>% filter(grepl('http', url)) -> links
+
+links %>% filter(!grepl('www.poczta.fm', url)) -> links
+
+unique(links) -> links
+
+write.csv(links, 'interia2000_outside.csv', fileEncoding = "UTF-8")
