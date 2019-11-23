@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1574547764645.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "372F3995",
+    "lastKnownWriteTime" : 1574548127,
+    "last_content_update" : 1574548131525,
+    "path" : "~/Code/R/interia2000/interia2000.R",
+    "project_path" : "interia2000.R",
+    "properties" : {
+        "cursorPosition" : "19,0",
+        "scrollLine" : "9",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

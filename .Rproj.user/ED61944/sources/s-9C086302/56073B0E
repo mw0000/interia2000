@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1574547863406.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "56073B0E",
+    "lastKnownWriteTime" : 94288031397632,
+    "last_content_update" : 1574547863406,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "DAFFC918",
+        "caption" : "dta",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=dta&cache_key=DAFFC918",
+        "displayedObservations" : "430",
+        "environment" : "",
+        "expression" : "dta",
+        "object" : "dta",
+        "preview" : "0",
+        "totalObservations" : "430",
+        "variables" : "7"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
