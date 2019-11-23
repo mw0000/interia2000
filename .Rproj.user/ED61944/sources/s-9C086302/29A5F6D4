@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1574548554098.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "29A5F6D4",
+    "lastKnownWriteTime" : 1574548533,
+    "last_content_update" : 1574548554098,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "4B1D330F",
+        "caption" : "dta.cat",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=dta.cat&cache_key=4B1D330F",
+        "displayedObservations" : 37,
+        "environment" : "",
+        "expression" : "dta.cat",
+        "object" : "dta.cat",
+        "preview" : 0,
+        "totalObservations" : 37,
+        "variables" : 7
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
