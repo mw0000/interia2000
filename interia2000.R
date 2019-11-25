@@ -151,6 +151,15 @@ get_wayback_urls <- function(data) {
 
 
 
-#a <- fromJSON("https://archive.org/wayback/available?url=http://www.optel.com.pl/i&timestamp=2000")
-#a
-a <- get_wayback_urls(links.lst[130:145])
+outer_links <- get_wayback_urls(links.lst)
+
+
+###################
+
+library(dplyr)
+
+filter_outer_links <- outer_links %>% filter(year == 2000) %>% filter(http_status == 200)
+
+filtered_outer_urls <- filter_outer_links$wb_url_clean
+
+
