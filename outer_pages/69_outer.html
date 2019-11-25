@@ -1,0 +1,83 @@
+<html>
+
+<head>
+<base href="http://www.bresa.com.pl/bre/">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<title>BRE Bank</title>
+</head>
+<script language="JavaScript">
+
+<!--
+//// Begin to hide script contents from old browsers.
+     browserName = navigator.appName;
+     browserVer = parseInt(navigator.appVersion);
+     if (browserName == "Netscape" && browserVer >= 3) version = "n3"; 
+     else if (browserName == "Microsoft Internet Explorer" && browserVer >= 4) version = "n3";
+     else version = "n2";
+     if (version == "n3")
+        { 
+               m1 = new Image();
+               m1.src = "java/anim1.jpg";
+               m1_on = new Image();
+               m1_on.src = "java/anim4.jpg";
+               }
+  function img_on(imgName) {
+  if (version == "n3") {
+  imgOn = eval(imgName + "_on.src");
+  document [imgName].src = imgOn; } }
+  function img_out(imgName) {
+  if (version == "n3") {
+  imgOut = eval(imgName + ".src");
+  document [imgName].src = imgOut;        } }
+// End the hiding here.
+// -->
+
+</script>
+
+
+<body bgcolor="#C5AC72" background="images/door_back.jpg">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+<Tr>      
+    <td valign="middle" align="center"><div align="center"><center><table border="0"
+    cellpadding="0" cellspacing="0">
+      <tr>
+        <td>
+		<table border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td><img src="images/door1.jpg" width="491" height="173"></td>
+          </tr>
+          <tr>
+            <td><table border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td><img src="images/door2.jpg" width="168" height="229"></td>
+                <td><a HREF="index1.html"
+                onmouseover="img_on('m1'); window.status = 'Zapraszamy';       return true"
+                onmouseout="img_out('m1');   window.status = ''; return true"><img SRC="java/anim1.jpg"
+                NAME="m1" ALT="Kliknij aby wejsc" BORDER="0" width="142" height="229"></a></td>
+                <td><img src="images/door3.jpg" width="181" height="229"></td>
+              </tr>
+            </table>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="images/door4.jpg" width="491" height="45"></td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+    </table>
+    </center></div></td>
+  </tr>
+</table>
+</center></div>
+
+<P>&nbsp;<P><center><div>
+<FONT SIZE="-2">Realizacja serwisu: <a href="authors.html">Zespół ATOMNET Studio 1998</a>.
+        Copyright 1998 BRE Bank SA</FONT>
+</center></div>
+
+</body>
+</html>
+

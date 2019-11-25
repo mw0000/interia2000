@@ -162,4 +162,7 @@ filter_outer_links <- outer_links %>% filter(year == 2000) %>% filter(http_statu
 
 filtered_outer_urls <- filter_outer_links$wb_url_clean
 
+write.csv(filtered_outer_urls, 'filtered_outer_urls.csv', fileEncoding = "UTF-8")
+
+
 

@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- begin script
+var msgBan6, msgBan6b, string6 = "", stringPart6, delayBan6, ban6;
+function banniere6(delay) {
+  delayBan6 = delay;
+  if (string6.length == 0) {
+    string6 = " ";
+    msgBan6b = msgBan6;
+    stringPart6 = "";
+  }
+  else if (string6.length == 1) {
+    while (msgBan6b.substring(0, 1) == " ") {
+      stringPart6 = stringPart6 + string6;
+      string6 = msgBan6b.substring(0, 1);
+      msgBan6b = msgBan6b.substring(1, msgBan6b.length);
+    }
+    stringPart6 = stringPart6 + string6;
+    string6 = msgBan6b.substring(0, 1);
+    msgBan6b = msgBan6b.substring(1, msgBan6b.length);
+  }
+  else string6 = string6.substring(10, string6.length);
+
+  window.status = stringPart6 + string6;
+  ban6 = window.setTimeout('banniere6(delayBan6)',delay);
+}
+// end script -->
+</SCRIPT>
+<HEAD>
+<META HTTP-EQUIV="description" CONTENT="Strona poswiecona emulacji Amigi na komputerze klasy PC, na najwa¿niejszych systemach, t.j. Windows, Dos czy Linux.">
+<META HTTP-EQUIV="author" CONTENT="morr@box43.gnet.pl">
+<META HTTP-EQUIV="keywords" CONTENT="amiga, emulation, morr, emulacja, uae, winuae, fellow, faq, historia amigi, unix, emulator, linki, linux, problem, problemy, help">
+<META HTTP-EQUIV="url" CONTENT="http://www.aeo.silesianet.pl">
+<META NAME="Language" CONTENT="PL">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=iso-8859-2">
+<TITLE>Amiga Emulation On-Line</TITLE>
+<style>
+<!--
+.curtain{
+position:absolute;
+left:0;
+top:0;
+layer-background-color:0080C0;
+background-color:0080C0;
+border:0.1px solid BLUE
+}
+-->
+</style>
+
+
+</HEAD>
+<BODY onLoad="msgBan6='Amiga Emulation On-Line <http://www.aeo.silesianet.pl>'; banniere6(100);" onUnload="clearTimeout(ban6)" BGCOLOR="silver" BACKGROUND="./gfx/bg2.jpg" TEXT="Black" LINK="YELLOW" VLINK="Red" ALINK="GREEN">
+
+
+<div id="c1" class="curtain"></div><div id="c2" class="curtain"></div>
+<script language="JavaScript1.2">
+
+
+var speed=15
+var temp=new Array()
+var temp2=new Array()
+if (document.layers){
+for (c=1;c<=2;c++){
+temp[c]=eval("document.c"+c+".clip")
+temp2[c]=eval("document.c"+c)
+temp[c].width=window.innerWidth
+temp[c].height=window.innerHeight/2
+temp2[c].top=(c-1)*temp[c].height
+}
+}
+else if (document.all){
+var curtainbottom=document.body.offsetHeight/2,curtaintop=0
+for (c=1;c<=2;c++){
+temp[c]=eval("document.all.c"+c+".style")
+temp[c].width=document.body.clientWidth
+temp[c].height=document.body.offsetHeight/2
+temp[c].top=(c-1)*parseInt(temp[c].height)
+}
+}
+
+function openit(){
+window.scrollTo(0,0)
+if (document.layers){
+temp[1].bottom-=speed
+temp[2].top+=speed
+if (temp[1].bottom<=0)
+clearInterval(stopit)
+}
+else if (document.all){
+curtainbottom-=speed
+temp[1].clip="rect(0 auto+"+curtainbottom+" 0)"
+curtaintop+=speed
+temp[2].clip="rect("+curtaintop+" auto auto)"
+if (curtainbottom<=0)
+clearInterval(stopit)
+}
+}
+function gogo(){
+stopit=setInterval("openit()",100)
+}
+gogo()
+
+</script>
+
+<!-- END OF Curtain DHTML -->
+
+
+<CENTER><a href="http://www.bannermania.nom.pl/c/007037/666" TARGET="_top">
+<img src="http://www.bannermania.nom.pl/s/007037/666" border="1" width="450" height="50" alt="BannerMania" ISMAP></a></CENTER>
+<FONT COLOR="Red" SIZE="6"><CENTER>Witaj na stronach Amiga Emulation On-Line !</FONT><BR><BR><BR>
+<TABLE WIDTH="45%" ALIGN="RIGHT" BORDER="4" COLOR="GREEN">
+<TR><TD><B><FONT COLOR="GREEN" SIZE="2"><P ALIGN="RIGHT">Niedziela, 9 Stycznia 2000</P>
+<P>Nast±pi³o uaktualnienie <a href="ankieta.htm">ankiety</A> - jest dok³adniejsza ...
+<P>Nareszcie s± <a href="gry.htm">GRY !!!</a> - na razie tylko trzy, ale to dopiero pocz±tek
+</TR>
+</TD>
+<TR><TD><B><FONT COLOR="GREEN" SIZE="2"><P ALIGN="RIGHT">Niedziela, 5 Grudnia 1999</P>
+<P>Doda³em <A HREF="ankieta.htm">ankietê</A> - teraz ju¿ mo¿na skrytykowaæ :)) Jest tam te¿ pytanie, czy chcecie gier ? Jak bêdzie wystarczaj±co du¿o "TAK"ów, to umieszczê kilka(set?!) najlepszych gierek :))
+<P>Znów zmiana wygl±du strony, teraz guziki zajmuj± mniej, ale zmiana nie jest zbyt znaczna :)</font></b>
+
+<TR><TD><B><FONT COLOR="GREEN" SIZE="2"><P ALIGN="RIGHT">Sroda, 1 Grudnia 1999</P>
+<P>Ostatnio serwer SilesiaNet nie dzia³a³, wiêc AEO by³o niedostêpne :(
+<P>Mam bardzo z³± wiadomo¶æ : dysk mi pad³ i straci³em wszystko ! Razem z adresami powiadomieñ :(( Bardzo was przepraszam (chocia¿ to chyba nie moja wina, tylko tego g³upiego dysku :)) i <BR>
+<h3>PROSZÊ O PONOWNE WYS£ANIE ADRESÓW DO POWIADOMIENIA !</h3></font></b></TR>
+<TR><TD><B><FONT COLOR="GREEN" SIZE="2"><P ALIGN="RIGHT">Poniedzia³ek, 1 Listopada 1999</P>
+<P>Nadszed³ dzieñ wielkich zmian, nie ¿eby w emulacji Amigi :))) Chocia¿ ten by siê przyda³, np.
+emulacjia procesorów 030. Ale nie o to chodzi :(. Jak mo¿e zauwa¿yli¶cie, to strony AEO tak jakby
+zmieni³y swój wygl±d :)). Teraz s± bardziej kolorowe, zupe³nie bezramkowe (to mój osobisty sukces),
+no i mo¿e trochê przebajerzone ;-). Niestety, wersja bez polsikch znaczków zniknê³a, chuba ju¿ 
+wszyscy potrafi± ich u¿ywaæ, co ? Mam nadzieje. Ogonki s± w standardzie ISO8859-2, czyli <U>jedynym</u>
+obowi±zuj±cym. Nie ma te¿ podzia³u na stronki 1024x768 - 800x600. Teraz wszystko wygl±da mniej
+wiêcej podobnie, choæ wci±¿ zalecam rozdzia³kê 1024x768, najlepiej 16 bit, ale moze byc 256 kolorków.
+<p>Jak widaæ zmiany s± du¿e, mam nadzieje, ¿e <U>Wam</U> siê spodobaj±. Mnie pasuje :))
+<P>Tak przy boku, apropos zmian, doszed³, a raczej dosz³y FAQi na temat Fellow'a. Ja spe³niam obietnice (patrz ni¿ej :))
+<P>Hmmm, mam nadziejê, ¿e takie du¿e zmiany akurat w ¦wiêto Zmar³ych nie wró¿± mi i AEO szybkiego zej¶cia z tego ¶wiata :)))</font></b></TD></tr>
+<TR><TD><B><FONT COLOR="GREEN" SIZE="2"><P ALIGN="RIGHT">Piatek, 15 Pazdziernika 1999</p>
+<P>Pojawi³a siê nowa wersja <A HREF="./progz/winuae.exe">WinUAE 0.8.8 r8 </A></font></b></TR>
+<TR><TD><B><FONT COLOR="GREEN" SIZE="2"><P ALIGN="RIGHT">Sroda, 6 Pazdziernika 1999</p>
+<P>Sorry, za tak d³ugi okres bez aktualizacji, ale po prostu ... nic sie w dziedzinie emulatorów Amigi nie dzieje :((. Na razie powstaje FAQ o Fellow'ie, ale co¶ mi cienko idzie, szko³a, te sprawy. Ale jak móg³bym tak nic nie robiæ :)). Doda³em nowy plik - <A HREF="http://www.silesianet.pl/~aeo_fil/aiab-2000.exe">AIAB-2000</A>. Przydatny, serio !
+Wiêcej (troche) w Download, ale ¿eby tam zajrzeæ musisz wej¶æ na stronkê :)
+<P>Je¶li kto¶ ma Workbencha (najlepiej 3.1) w ADF, niech <A HREF="mailto:morr@box43.gnet.pl?subject=WB">podePle</A>
+<p>Zmieni³ mi siê e-mail, dlatego m.in. update, na <A HREF="mailto:morr@box43.gnet.pl">morr@box43.gnet.pl</A>.</font></b></TR>
+<TR><TD><B><FONT COLOR="GREEN" SIZE="2"><P ALIGN="RIGHT">Sroda, 25 sierpnia 1999</p>
+<P>Kolejny nowy plik - <A HREF="http://www.silesianet.pl/~aeo_fil/newicons41.lha">NewIcons 4.1</A>.</TR>
+<TR><TD><B><FONT COLOR="GREEN" SIZE="2"><P ALIGN="RIGHT">Sobota, 21 sierpnia 1999</p>
+<P>Doda³em nowy plik - <A HREF="./progz/mui38.lha">MUI 3.8</A>, tylko braæ !!!</font></b></TR>
+<TR><TD><B><FONT COLOR="GREEN" SIZE="2"><P ALIGN="RIGHT">Poniedzia³ek, 9 sierpnia 1999</p>
+<P>Bardzo przepraszam za wersjê strony z polskimi znakami - otrzyma³em kilka wiadomo¶ci, ¿e wy¶wietla siê niepoprawnie. 
+U mnie wszystko gra, ale na wszelki wypadek zmieni³em czcionkê.
+<p>Pojawi³a siê nowa wersja <A HREF="./progz/winuae.exe">WinUAE - 0.8.8 r7</A>
+<p>W Linkach doda³em swój banner oraz instrukcje jego umieszczenia na twojej stronie - wymiana mile widziana !</FONT></B></TR></TABLE>
+<BR<BR><BR><CENTER><FONT COLOR="#0F00CA" SIZE="5">Od 1 VIII `99 AEO odwiedzi³o tyle osób:</FONT>
+<CENTER><A HREF="http://count.itnet.pl/stats?aeo" TARGET="_top"><IMG SRC="http://count.itnet.pl/counter?aeo" BORDER=0 ALT="counter"></A><BR><BR></CENTER>
+<BR><BR><BR><BR>
+<FONT SIZE="5"><A HREF="wstep.htm">Zapraszam :))<BR><IMG SRC="./gfx/doorl.gif" ALT="No wejd¼ ..." BORDER="0" width="34" height="33"><IMG SRC="./gfx/doorr.gif" ALT="No wejd¼ ..." BORDER="0" width="34" height="33"></A>
+<BR><BR>Je¶li chcesz otrzymywaæ powiadomienia o uaktualnieniu AEO, wpisz poni¿ej swój e-mail
+<BR></FONT>
+<DIV ALIGN="CENTER"><FONT FACE="Arial" SIZE="1">
+<FORM NAME="anymail"  METHOD="POST" ENCTYPE="text/plain" ACTION="mailto:morr@box43.gnet.pl?Subject=Powiadomienie">
+<P>
+Podaj swój e-mail:<BR>
+<INPUT TYPE="TEXT" NAME="E-mail" SIZE=30 VALUE="ty@twoj.serwer"> <BR>
+<INPUT TYPE="Submit" VALUE="Zapisz siê"></FORM>
+</DIV><BR><BR><BR><BR>
+<TABLE BORDER="2"><TR><tD>
+<FONT SIZE="2">
+<CENTER>Best viewed in :<BR></CENTER>
+<IMG SRC="./gfx/ie_static.gif" ALT="Internet Explorer 4.xx i wy¿ej" width="88" height="31"><B> 1024x768 16 bit </B><IMG SRC="./gfx/netscape.gif" ALT="Netscape Navigator 4.xx i wy¿ej" width="88" height="31"></FONT>
+<table border=0 cellpadding=0 cellspacing=0 bgcolor=white><tr><td align=center><font color=black style="color: black">R&nbsp;&nbsp;&nbsp;&nbsp;E&nbsp;&nbsp;&nbsp;&nbsp;K&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;&nbsp;M&nbsp;&nbsp;&nbsp;&nbsp;A</font></td></tr><tr><td align=center><a href="http://www.sklep.silesianet.pl" target=_blank><img src="http://www.silesianet.pl/banners/8.gif" border=0 align=center alt="Sklepy internetowe - Perfect Shop 2000"></a><font color=black style="color: black"><br><nobr>Darmowe konta pocztowe i www: <a href=http://www.silesianet.pl target=_blank style="color: blue">SilesiaNet</a></nobr></font></td></tr></table>
+
+</BODY>
+

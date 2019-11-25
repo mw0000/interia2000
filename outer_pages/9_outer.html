@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>Express Ilustrowany</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<style type="text/css">
+<!--
+-->
+</style>
+
+<script language="JavaScript" type="text/javascript">                 
+<!--                                                                  
+                                                                      
+                                                                      
+var Imgi = new Array();       
+var Bledy = 0;         
+var preloadTimer;     
+var preloadOK = ''     
+var preloadBlad = ''   
+
+
+// funkcja start - co mamy do wykonania po załadowaniu obrazków
+function start() {
+
+
+window.location = "index1.html"
+
+                             }   
+                                                                      
+
+function preload(url) {
+   if (document.images) {                                             
+      var i = Imgi.length;                                            
+      Imgi[i] = new Image();                                          
+      Imgi[i].onerror = preloadOnError;                               
+      Imgi[i].src = url;                                              
+   }                                                                  
+}                                                                     
+                                                                      
+
+function preloadOnError() {                                           
+   Bledy++;                                                           
+}                                                                     
+                                                                      
+
+function preloadStart(ok, blad) {                                     
+   preloadOK = ok;                                                    
+   preloadBlad = blad;                                                
+   preloadCheck();                                                    
+}                                                                     
+                                                                      
+                    
+function preloadCheck() {                                             
+   var i=0;                                                           
+   var l=Imgi.length;                                                 
+   var b = Bledy;                                                     
+                             
+   while (i<l && Imgi[i].complete || b-->0) i++;                      
+   if (i>=l)
+      if (Bledy==0)                                                   
+         eval(preloadOK)                                              
+      else                                                            
+         eval(preloadBlad)                                            
+   else                      
+      preloadTimer = setTimeout('preloadCheck()',1000);                
+}                                                                     
+                                                                      
+// ******                                                                      
+
+//-->                                                                 
+</script> 
+
+
+<SCRIPT language=JavaScript>
+preload('images/sport_czw.gif');
+preload('images/banernowy.gif');
+preload('images/bez_recepty.jpg');
+preload('images/brzeziny_sobota.jpg');
+preload('images/c_s_swiata.jpg');
+preload('images/dalej.jpg');
+preload('images/poza_prawem_win.jpg');
+preload('images/logo.gif');
+preload('images/logo-sport.gif');
+preload('images/pilot.jpg');
+preload('images/pasek-down.gif');
+preload('images/pasek-up.gif');
+preload('images/powrot.jpg');
+preload('images/waluta.gif');
+preload('images/zgierz_sobota.jpg');
+preloadStart('start()', 'alert("Wystąpił błąd przy ładowaniu obrazków.\n")');
+
+</script>
+
+<BODY BGCOLOR="#ffffffff">
+
+<p>&nbsp;</p>
+<p>&nbsp;	</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="center"><font face="Arial, Helvetica, sans-serif" size="4" color="#0000FF"><b><font color="#999999" face="Verdana, Arial, Helvetica, sans-serif" size="3">Ładowanie 
+  strony </font><font color="#999999"> </font><br>
+
+</b></font></p>
+<p align="center"><img src="images/logo.gif" width="130" height="54"></p>
+<p align="center"><font face="Arial, Helvetica, sans-serif" size="4" color="#999999"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="3">Proszę 
+  poczekać...</font></b></font></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+</body>
+</html>

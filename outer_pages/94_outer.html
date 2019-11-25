@@ -1,0 +1,130 @@
+<html>
+
+<head>
+<meta name="postinfo" content="/scripts/postinfo.asp">
+<meta NAME="Author" CONTENT="Robert Chmielinski">
+<meta NAME="Copyright" CONTENT="AIUT Sp. z o.o.,1999">
+<meta NAME="KeyWords" CONTENT="AIUT aiut automatyka Siemens">
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-2">
+<title>AIUT Sp. z o.o.</title>
+<script LANGUAGE="JavaScript">
+<!-- Ukrywa skrypt w starszych przegladarkach
+ // N - stan nieaktywny
+ // A - stan aktywny (myszka nad obiektem)
+
+ if (document.images)
+ {
+   var Nauto = new Image();
+   Nauto.src = "images/auto_N.gif";
+   var Aauto = new Image();
+   Aauto.src = "images/auto_A.gif";
+             
+   var Nelekt = new Image();
+   Nelekt.src = "images/elekt_N.gif";
+   var Aelekt = new Image();
+   Aelekt.src = "images/elekt_A.gif";
+
+   var Ninfor = new Image();
+   Ninfor.src = "images/infor_N.gif";
+   var Ainfor = new Image();
+   Ainfor.src = "images/infor_A.gif";
+            
+   var Nkont = new Image();
+   Nkont.src = "images/kont_N.gif";
+   var Akont = new Image();
+   Akont.src = "images/kont_A.gif";
+             
+   var Nrefer = new Image();
+   Nrefer.src = "images/refer_N.gif";
+   var Arefer = new Image();
+   Arefer.src = "images/refer_A.gif";
+
+   var Nreal = new Image();
+   Nreal.src = "images/real_N.gif";
+   var Areal = new Image();
+   Areal.src = "images/real_A.gif";
+             
+   var Nkat = new Image();
+   Nkat.src = "images/kat_N.gif";
+   var Akat = new Image();
+   Akat.src = "images/kat_A.gif";
+
+   var Nsiem = new Image();
+   Nsiem.src = "images/siem_N.gif";
+   var Asiem = new Image();
+   Asiem.src = "images/siem_A.gif";
+             
+   var Nfirm = new Image();
+   Nfirm.src = "images/firm_N.gif";
+   var Afirm = new Image();
+   Afirm.src = "images/firm_A.gif";
+   
+   var Ndeu = new Image();
+   Ndeu.src = "images/deutsch.gif";
+   var Adeu = new Image();
+   Adeu.src = "images/deutsch_A.gif";
+
+   var Nitl = new Image();
+   Nitl.src = "images/italiano.gif";
+   var Aitl = new Image();
+   Aitl.src = "images/italiano_A.gif";
+
+   var Neng = new Image();
+   Neng.src = "images/english.gif";
+   var Aeng = new Image();
+   Aeng.src = "images/english_A.gif";
+ }  
+                
+ // Funkcja uaktywniajaca              
+ function Act(imgName)
+ {  document.images[imgName].src = eval('A' + imgName + '.src'); }
+
+ //Funkcja deaktywujaca
+ function DeAct(imgName)
+ {  document.images[imgName].src = eval('N' + imgName + '.src'); }
+
+// Koniec ukrywania skryptu w starszych przegladarkach -->
+</script>
+</head>
+
+<body background="images/tlo2.jpg" LINK="#3300CC" VLINK="#660099" ALINK="#66CCCC" leftmargin="0">
+
+<table BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="703" HEIGHT="80">
+  <tr>
+    <td align="center" width="124" valign="middle"><img src="images/logo.gif" width="110" height="73" align="center" ALT="AIUT Sp.z o. o."></td>
+    <td align="center" width="217" valign="top"><font size="1"><p align="center"><a href="ang.html" onclick="DeAct('eng')" onmouseover="Act('eng')" onmouseout="DeAct('eng')"><image src="images/english.gif" border="0" width="100" height="25" alt="English" name="eng"></a><br>
+    <a href="ger.html" onclick="DeAct('deu')" onmouseover="Act('deu')" onmouseout="DeAct('deu')"><image src="images/deutsch.gif" border="0" width="100" height="25" alt="Deutsch" name="deu"></a><br>
+    <a href="itl.html" onclick="DeAct('itl')" onmouseover="Act('itl')" onmouseout="DeAct('itl')"><image src="images/italiano.gif" border="0" width="100" height="25" alt="Italiano" name="itl"></a></font></td>
+    <td align="right" width="362"><img SRC="images/bela-adr.gif" ALIGN="TOP" alt="Adres" WIDTH="360" HEIGHT="80"></td>
+  </tr>
+</table>
+
+<table BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="705">
+  <tr>
+    <td align="right" width="110"><a HREF="refer\default.asp" onclick="DeAct('refer');" onmouseover="Act('refer')" onmouseout="DeAct('refer')"><img SRC="images/refer_N.gif" ALT="Referencje" BORDER="0" ALIGN="bottom" name="refer" WIDTH="92" HEIGHT="25"></a><br>
+    <img src="images/trans.gif" height="4"><br>
+    <a HREF="autom.htm" onclick="DeAct('auto');" onmouseover="Act('auto')" onmouseout="DeAct('auto')"><img SRC="images/auto_N.gif" ALT="Automatyka" BORDER="0" ALIGN="bottom" name="auto" WIDTH="92" HEIGHT="25"></a><br>
+    <img src="images/trans.gif" height="4"><br>
+    <a HREF="elektro.htm" onclick="DeAct('elekt');" onmouseover="Act('elekt')" onmouseout="DeAct('elekt')"><img SRC="images/elekt_N.gif" ALT="Elektronika" BORDER="0" ALIGN="bottom" name="elekt" WIDTH="92" HEIGHT="25"></a><br>
+    <img src="images/trans.gif" height="4"><br>
+    <a HREF="infor.htm" onclick="DeAct('infor');" onmouseover="Act('infor')" onmouseout="DeAct('infor')"><img SRC="images/infor_N.gif" ALT="Informatyka" BORDER="0" ALIGN="bottom" name="infor" WIDTH="92" HEIGHT="25"></a><br>
+    <img src="images/trans.gif" height="4"><br>
+    <a HREF="realiz.htm" onclick="DeAct('real');" onmouseover="Act('real')" onmouseout="DeAct('real')"><img SRC="images/real_N.gif" ALT="Nasze realizacje" BORDER="0" ALIGN="bottom" name="real" WIDTH="92" HEIGHT="25"></a><br>
+    <img src="images/trans.gif" height="4"><br>
+    <a HREF="firm.htm" onclick="DeAct('firm');" onmouseover="Act('firm')" onmouseout="DeAct('firm')"><img SRC="images/firm_N.gif" ALT="Profil firmy" BORDER="0" ALIGN="bottom" name="firm" WIDTH="92" HEIGHT="25"></a><br>
+    <img src="images/trans.gif" height="4"><br>
+    <a HREF="automat/default.asp" onclick="DeAct('kat');" onmouseover="Act('kat')" onmouseout="DeAct('kat')"><img SRC="images/kat_N.gif" ALT="Katalog" BORDER="0" ALIGN="bottom" name="kat" WIDTH="92" HEIGHT="25"></a><br>
+    <img src="images/trans.gif" height="4"><br>
+    <a HREF="Siemens/default.htm" onclick="DeAct('siem');" onmouseover="Act('siem')" onmouseout="DeAct('siem')"><img SRC="images/siem_N.gif" ALT="Siemens" BORDER="0" ALIGN="bottom" name="siem" WIDTH="92" HEIGHT="25"></a><br>
+    <img src="images/trans.gif" height="4"><br>
+    <a HREF="kontakt.htm" onclick="DeAct('kont');" onmouseover="Act('kont')" onmouseout="DeAct('kont')"><img SRC="images/kont_N.gif" ALT="Kontakt" BORDER="0" ALIGN="bottom" name="kont" WIDTH="92" HEIGHT="25"></a><br>
+    <img src="images/trans.gif" height="4"><br>
+    </td>
+    <td width="225"><p align="right"><big><font face="Arial"><big><big>Automatyka</big></big></font></big></p>
+    <p align="right"><big><font face="Arial"><big><big>Elektronika</big></big></font></big></p>
+    <p align="right"><big><font face="Arial"><big><big>Informatyka</big></big></font></big></td>
+    <td width="1"><p align="right"><img src="images/Defaul1.jpg" width="358" height="288" alt="wpe31.jpg (24937 bytes)"></td>
+  </tr>
+</table>
+</body>
+</html>
