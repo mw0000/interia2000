@@ -165,4 +165,36 @@ filtered_outer_urls <- filter_outer_links$wb_url_clean
 write.csv(filtered_outer_urls, 'filtered_outer_urls.csv', fileEncoding = "UTF-8")
 
 
+s <- 1
+for(o in filtered_outer_urls){
+  
+  download.file(o, paste0('outer_pages/',s,"_outer.html"))
+  s <- s + 1
+}
 
+##########################################
+
+
+network.df <- filter_outer_links
+
+network.df <- network.df %>% mutate(file = paste0(row_number(),"_outer.html"))
+
+
+files <- dir('outer_pages')  
+
+files.df <- data.frame(stringsAsFactors = FALSE)
+
+for(f in files) {
+  
+  fle <- paste0('outer_pages/',f)
+  x <- read_html(fle)
+  x <- xml_find_all(x,'//a/@href')
+  x <- unlist(as_list(x))
+  
+  for(xs in x) {
+    files.df <- rbind(files.df,data.frame(list(file_name = f, link = xs),stringsAsFactors = FALSE))
+  }
+  
+}
+
+files.df <- files.df %>% filter(grepl('http',link))
